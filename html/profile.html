@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - CineVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">CineVerse</h2>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Movies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+
+        <a href="auth.html" class="login-button">Login</a>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile-header-simplified">
+                <div class="profile-avatar-simplified">
+                    <img src="img/avatar.png" alt="User Avatar">
+                </div>
+                <div class="profile-user-info-simplified">
+                    <h1>John Doe</h1>
+                    <p>Cinephile since 2020</p>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <section class="profile-section active">
+                    <h2>Edit Profile</h2>
+
+                    <div class="settings-form">
+                        <div class="profile-form-group">
+                            <label for="display-name">Display Name</label>
+                            <input type="text" id="display-name" value="John Doe">
+                        </div>
+
+                        <div class="profile-form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="john.doe@example.com">
+                        </div>
+
+                        <div class="profile-form-group">
+                            <label for="bio">Bio</label>
+                            <textarea id="bio"
+                                rows="4">Movie enthusiast with a passion for sci-fi and thrillers. Christopher Nolan fan.</textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button class="save-settings-btn">Save Changes</button>
+                            <button class="cancel-btn">Cancel</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CineVerse</h3>
+                <p>Your trusted source for honest movie reviews and ratings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CineVerse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

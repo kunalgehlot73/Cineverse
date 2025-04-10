@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar - Cineverse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <h2 class="logo">CineVerse</h2>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Movies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        
+        <a href="auth.html" class="login-button">Login</a>
+
+    </header>
+    
+    <main>
+
+        <div class="movie-review-container">
+            <div class="movie-hero">
+                <div class="movie-hero-overlay"></div>
+                <div class="movie-hero-content">
+                    <div class="movie-title-section">
+                        <h1>Interstellar</h1>
+                        <div class="movie-meta">
+                            <span class="year">2014</span>
+                            <span class="duration">2h 49m</span>
+                            <span class="rating">9.5/10 ⭐</span>
+                        </div>
+                        <div class="movie-genres">
+                            <span>Sci-Fi</span>
+                            <span>Adventure</span>
+                            <span>Drama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-details">
+                <div class="movie-info-grid">
+                    <div class="movie-trailer">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/HYVxnPmb15E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Release Date: November 7, 2014</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-film"></i>
+                                <span>Director: Christopher Nolan</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>Cast: Matthew McConaughey, Anne Hathaway, Jessica Chastain</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Language: English</span>
+                            </div>
+                        </div>
+                        <div class="movie-synopsis">
+                            <h2>Synopsis</h2>
+                            <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is
+                                tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for
+                                humans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-header">
+                    <h2>Storyline</h2>
+                    <div class="review-rating">
+                        <div class="rating-circle">
+                            <span class="rating-number">9.5</span>
+                            <span class="rating-label">/10</span>
+                        </div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="storyline">
+                    <p>In the near future around the American Midwest, Cooper, an ex-science engineer and pilot, is tied to his farming land with his daughter Murph and son Tom. As devastating sandstorms ravage Earth's crops, the people of Earth realize their life here is coming to an end as food begins to run out. Eventually stumbling upon a N.A.S.A. base 6 hours from Cooper's home, he is asked to go on a daring mission with a few other scientists into a wormhole because of Cooper's scientific intellect and ability to pilot aircraft unlike the other crew members. In order to find a new home while Earth decays, Cooper must decide to either stay, or risk never seeing his children again in order to save the human race by finding another habitable planet.</p>
+                </div>
+            </div>
+            <div class="user-comment-section">
+                <h2>Leave a Comment</h2>
+                <form class="comment-form">
+                    <div class="review-form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="review-form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="review-form-group">
+                        <label for="rating">Rating</label>
+                        <div class="rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <div class="review-form-group">
+                        <label for="comment">Your Comment</label>
+                        <textarea id="comment" name="comment" required
+                            placeholder="Share your thoughts about the movie..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-comment">Post Comment</button>
+                </form>
+            </div>
+            <div class="user-reviews">
+                <h2>User Reviews</h2>
+                <div class="review-filters">
+                    <button class="filter-btn active">All Reviews</button>
+                    <button class="filter-btn">Positive</button>
+                    <button class="filter-btn">Mixed</button>
+                    <button class="filter-btn">Negative</button>
+                </div>
+                <div class="user-review-list">
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                    <div class="user-review">
+                        <div class="user-review-header">
+                            <div class="user-info">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                            </div>
+                            <div class="review-date">March 15, 2024</div>
+                        </div>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="user-review-text">A masterpiece of modern cinema. The visual effects are stunning, and the emotional depth is incredible. One of the best sci-fi movies ever made.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+        <div class="footer-content">
+        
+            <div class="footer-section">
+                <h3>CineVerse</h3>
+                <p>Your trusted source for honest movie reviews and ratings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 CineVerse. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

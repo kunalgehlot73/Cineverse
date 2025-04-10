@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies - CineVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <h2 class="logo">CineVerse</h2>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Movies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <a href="auth.html" class="login-button">Login</a>
+
+    </header>
+
+    <main>
+
+        <section class="search-section">
+            <div class="search-container-large">
+                <h1>Find Your Perfect Movie</h1>
+                <div class="search-box">
+                    <input type="text" id="movie-search" placeholder="Enter movie title...">
+                    <button class="search-button-large"><i class="fas fa-search"></i> Search</button>
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <h3>Genre</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="genre" value="action"> Action</label>
+                            <label><input type="checkbox" name="genre" value="comedy"> Comedy</label>
+                            <label><input type="checkbox" name="genre" value="drama"> Drama</label>
+                            <label><input type="checkbox" name="genre" value="horror"> Horror</label>
+                            <label><input type="checkbox" name="genre" value="sci-fi"> Sci-Fi</label>
+                            <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Rating</h3>
+                        <div class="rating-slider">
+                            <input type="range" id="rating-min" min="0" max="10" step="0.5" value="0">
+                            <div class="rating-values">
+                                <span id="min-value">0</span>
+                                <span>to</span>
+                                <span id="max-value">10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="filter-reset">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-results">
+            <h2>Search Results</h2>
+
+            <div class="results-grid">
+                <!-- Example search result items -->
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url(img/interstellar.png)"></div>
+                    <div class="movie-info">
+                        <h3>Interstellar</h3>
+                        <div class="movie-meta">
+                            <span class="year">2014</span>
+                            <span class="rating">9.5/10 ⭐</span>
+                        </div>
+                        <div class="movie-genres">
+                            <span>Sci-Fi</span>
+                            <span>Drama</span>
+                            <span>Adventure</span>
+                        </div>
+                        <p class="movie-desc">A team of explorers travel through a wormhole in space in an attempt to
+                            ensure humanity's survival.</p>
+                        <a href="movie-review.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url(img/insterstellarp.png)"></div>
+                    <div class="movie-info">
+                        <h3>Inception</h3>
+                        <div class="movie-meta">
+                            <span class="year">2010</span>
+                            <span class="rating">9.2/10 ⭐</span>
+                        </div>
+                        <div class="movie-genres">
+                            <span>Sci-Fi</span>
+                            <span>Action</span>
+                            <span>Thriller</span>
+                        </div>
+                        <p class="movie-desc">A thief who steals corporate secrets through the use of dream-sharing
+                            technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+                        <a href="movie-review.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url(img/interstellar.png)"></div>
+                    <div class="movie-info">
+                        <h3>The Dark Knight</h3>
+                        <div class="movie-meta">
+                            <span class="year">2008</span>
+                            <span class="rating">9.0/10 ⭐</span>
+                        </div>
+                        <div class="movie-genres">
+                            <span>Action</span>
+                            <span>Crime</span>
+                            <span>Drama</span>
+                        </div>
+                        <p class="movie-desc">When the menace known as the Joker wreaks havoc and chaos on the people of
+                            Gotham, Batman must accept one of the greatest psychological and physical tests of his
+                            ability to fight injustice.</p>
+                        <a href="movie-review.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+        
+            <div class="footer-section">
+                <h3>CineVerse</h3>
+                <p>Your trusted source for honest movie reviews and ratings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 CineVerse. All rights reserved.</p>
+        </div>
+    
+    </footer>
+</body>
+</html>

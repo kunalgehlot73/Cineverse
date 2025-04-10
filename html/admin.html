@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CineVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">CineVerse</h2>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Movies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="auth.html" class="login-button">Logout</a>
+    </header>
+
+    <main class="admin-container">
+        <div class="admin-sidebar">
+            <div class="admin-profile">
+                <div class="admin-avatar">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>Admin Panel</h3>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li class="active"><a href="#movies"><i class="fas fa-film"></i> Movies</a></li>
+                    <li><a href="#users"><i class="fas fa-users"></i> Users</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="admin-content">
+            <div class="admin-content-header">
+                <h1>Movie Management</h1>
+                <button class="admin-add-movie-btn" onclick="showAddMovieForm()">
+                    <i class="fas fa-plus"></i> Add New Movie
+                </button>
+            </div>
+
+            <div class="admin-movie-form-container" id="movieForm">
+                <h2>Add/Edit Movie</h2>
+                <form class="admin-movie-form">
+                    <div class="admin-form-group">
+                        <label for="movieTitle">Movie Title</label>
+                        <input type="text" id="movieTitle" required>
+                    </div>
+                    <div class="admin-form-row">
+                        <div class="admin-form-group">
+                            <label for="releaseYear">Release Year</label>
+                            <input type="number" id="releaseYear" required>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="duration">Duration (minutes)</label>
+                            <input type="number" id="duration" required>
+                        </div>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="genres">Genres</label>
+                        <input type="text" id="genres" placeholder="Action, Drama, Sci-Fi" required>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="rating">Rating</label>
+                        <input type="number" id="rating" min="0" max="10" step="0.1" required>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="synopsis">Synopsis</label>
+                        <textarea id="synopsis" rows="4" required></textarea>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="posterUrl">Poster URL</label>
+                        <input type="url" id="posterUrl" required>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="youtube-id">YouTube Video ID</label>
+                        <input type="text" id="youtube-id" name="youtube_id" required
+                               placeholder="e.g.: HYVxnPmb15E">
+                        <small>Found in YouTube URL after ?v=</small>
+                    </div>
+                    <div class="admin-form-buttons">
+                        <button type="submit" class="admin-save-btn">Save Movie</button>
+                        <button type="button" class="admin-cancel-btn" onclick="hideAddMovieForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="admin-movies-table-container">
+                <h2>Existing Movies</h2>
+                <div class="admin-table-actions">
+                    <div class="admin-search-box">
+                        <input type="text" placeholder="Search movies...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="admin-filter-options">
+                        <select>
+                            <option value="">All Genres</option>
+                            <option value="action">Action</option>
+                            <option value="drama">Drama</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                        </select>
+                    </div>
+                </div>
+                <table class="admin-movies-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Rating</th>
+                            <th>Genres</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interstellar</td>
+                            <td>2014</td>
+                            <td>9.5</td>
+                            <td>Sci-Fi, Drama</td>
+                            <td class="admin-action-buttons">
+                                <button class="admin-edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="admin-delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Dark Knight</td>
+                            <td>2008</td>
+                            <td>9.0</td>
+                            <td>Action, Crime, Drama</td>
+                            <td class="admin-action-buttons">
+                                <button class="admin-edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="admin-delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showAddMovieForm() {
+            document.getElementById('movieForm').style.display = 'block';
+        }
+
+        function hideAddMovieForm() {
+            document.getElementById('movieForm').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
